@@ -1,0 +1,193 @@
+doctype html
+html(lang='es')
+    head
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        meta(http-equiv='content-type' content='text/html')
+        meta(charset='utf-8')
+        
+        link(type='text/css', rel='stylesheet', href='/css/inicio.css?v1.6')
+        link(type='text/css', rel='stylesheet', href='/css/styles.css?v1.6')
+        link(type='text/css', rel='stylesheet', href='/css/main_menu.css?v1.6')
+        link(type='text/css', rel='stylesheet', href='/css/index.css?v1.6')
+        link(type='text/css', rel='stylesheet', href='/css/secound_menu.css?v1.6')
+        link(type='text/css', rel='stylesheet', href='/css/header.css?v1.6')
+        link(type='text/css', rel='stylesheet', href='/css/footer.css?v1.6')
+        
+        link(href='https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500,600|Playfair+Display:400,700&display=swap', rel='stylesheet')
+        title El pais
+    include header1
+    body
+        .logo.entero
+            .medio
+                a(href="/")
+                    img(src="/images/logo.png")
+        include header2
+        .portada.entero
+            .medio
+                a.portada_items(href="#")
+                    img(src="/images/grid1.png")
+                    p.category INTERNACIONALES
+                    .datos_portada
+                        p.title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sem ut sem lobortis vulputate.
+                        span.date_portada
+                            i.icon-clock
+                            p 8 de agosto de 2019
+                a.portada_items(href="#")
+                    img(src="/images/grid2.png")
+                    p.category NACIONAL
+                    p.title Lorem ipsum dolor sit amet, consectetur  adipisci consectetur adipisci
+                a.portada_items(href="#")
+                    img(src="/images/grid3.png")
+                    p.category INTERNACIONALES
+                    p.title Lorem ipsum dolor sit amet, consectetur consectetur consectetur adipisci
+        .home.entero
+            .medio
+                .center
+                    h2.titulo
+                        i.icon-news 
+                        | ÚLTIMAS NOTICIAS
+                    .noticias
+                        a.noticias_items(href="#")
+                            .noticias_img
+                                img(src="/images/noticias1.png") 
+                                h3.category NACIONALES
+                            h2 Lorem ipsum dolor sit amet, consec tetur adipiscing 
+                            include date_noticias
+                        a.noticias_items(href="#")
+                            .noticias_img
+                                img(src="/images/noticias2.png") 
+                                h3.category NACIONALES
+                            h2 Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            include date_noticias
+                        a.noticias_items.noticias_items_last(href="#")
+                            .noticias_img
+                                img(src="/images/noticias3.png") 
+                                h3.category NACIONALES
+                            h2 Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            include date_noticias
+                        a(href="/").ver_mas  VER MÁS
+                    h2.subtitulo Política
+                    .politica
+                        a.politica_items(href="#")
+                            img(src="/images/politica1.png")
+                            .politica_texto
+                                h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sem ut sem 
+                                include date_noticias
+                        a.politica_items(href="#")
+                            img(src="/images/politica2.png")
+                            .politica_texto
+                                h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sem ut sem 
+                                include date_noticias
+                        a.politica_items(href="#")
+                            img(src="/images/politica3.png")
+                            .politica_texto
+                                h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sem ut sem 
+                                include date_noticias
+                        a(href="/").ver_mas  VER MÁS
+                    h2.subtitulo Nacionales
+                    .nacionales
+                        a.nacionales_items(href="#")        
+                            img(src="/images/nacionales1.png")
+                            h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sem ut sem 
+                            include date_noticias
+                        a.nacionales_items(href="#")        
+                            img(src="/images/nacionales2.png")
+                            h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sem ut sem 
+                            include date_noticias
+                        a.nacionales_items(href="#")        
+                            img(src="/images/nacionales3.png")
+                            h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sem ut sem 
+                            include date_noticias
+                        a.nacionales_items(href="#")        
+                            img(src="/images/nacionales4.png")
+                            h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sem ut sem 
+                            include date_noticias
+                        a(href="/").ver_mas  VER MÁS
+                    h2.subtitulo Interacionales
+                    .internacional
+                        a.internacional_items(href="#")
+                            img(src="/images/internacional1.png")
+                            h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            include date_noticias
+                        .internacional_group
+                            a.internacional_items2(href="#")
+                                img(src="/images/internacional2.png")
+                                .internacional_texto
+                                    h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    include date_noticias
+                            a.internacional_items2(href="#")
+                                img(src="/images/internacional3.png")
+                                .internacional_texto
+                                    h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    include date_noticias
+                        a(href="/").ver_mas  VER MÁS
+                    h2.subtitulo Deportes
+                    .deportes
+                        a.deportes_items(href="#")
+                            img(src="/images/deportes1.png")
+                            .internacional_texto
+                                h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                include date_noticias
+                        a.deportes_items(href="#")
+                            img(src="/images/deportes2.png")
+                            .internacional_texto
+                                h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                include date_noticias
+                        a.deportes_items(href="#")
+                            img(src="/images/deportes3.png")
+                            .internacional_texto
+                                h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                include date_noticias
+                        a.deportes_items(href="#")
+                            img(src="/images/deportes4.png")
+                            .internacional_texto
+                                h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                include date_noticias
+                        a(href="/").ver_mas  VER MÁS 
+
+                .sidebar
+                    .plomo
+                    h3.titulo_sidebar Posts destacados
+                    a.post_items(href="#")
+                        img(src="/images/posts1.png")
+                        h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        include date_noticias
+                    a.post_items(href="#")
+                        img(src="/images/posts2.png")
+                        h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        include date_noticias
+                    a.post_items(href="#")
+                        img(src="/images/posts3.png")
+                        h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        include date_noticias
+                    h3.titulo_sidebar Posts destacados
+                    a.reciente_items(href="#")
+                        img(src="/images/reciente1.png")
+                        .internacional_texto
+                            h2 Lorem ipsum dolor sit amet
+                            include date_noticias
+                    a.reciente_items(href="#")
+                        img(src="/images/reciente2.png")
+                        .internacional_texto
+                            h2 Lorem ipsum dolor sit amet
+                            include date_noticias
+                    a.reciente_items(href="#")
+                        img(src="/images/reciente3.png")
+                        .internacional_texto
+                            h2 Lorem ipsum dolor sit amet
+                            include date_noticias
+                    a.reciente_items(href="#")
+                        img(src="/images/reciente4.png")
+                        .internacional_texto
+                            h2 Lorem ipsum dolor sit amet
+                            include date_noticias
+                    a.reciente_items(href="#")
+                        img(src="/images/reciente5.png")
+                        .internacional_texto
+                            h2 Lorem ipsum dolor sit amets
+                            include date_noticias
+        include footer
+        script(src='https://code.jquery.com/jquery-1.11.3.min.js')
+        script(src='/js/efectos.js?v1.6')
+
+    

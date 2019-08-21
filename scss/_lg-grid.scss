@@ -1,0 +1,10 @@
+@mixin grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$color-primario:#2A2A2A;
+$color-secundario:#3F84BB;
+
+$fuente1:'IBM Plex Serif', serif;;
+$fuente2:'Playfair Display', serif;;

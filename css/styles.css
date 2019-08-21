@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "el-pais";
+  src:url("fonts/el-pais.eot");
+  src:url("fonts/el-pais.eot?#iefix") format("embedded-opentype"),
+    url("fonts/el-pais.woff") format("woff"),
+    url("fonts/el-pais.ttf") format("truetype"),
+    url("fonts/el-pais.svg#el-pais") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "el-pais" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "el-pais" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bars:before {
+  content: "\61";
+}
+.icon-search:before {
+  content: "\63";
+}
+.icon-times:before {
+  content: "\64";
+}
+.icon-calendar:before {
+  content: "\62";
+}
+.icon-mail:before {
+  content: "\65";
+}
+.icon-facebook:before {
+  content: "\66";
+}
+.icon-twitter:before {
+  content: "\67";
+}
+.icon-google:before {
+  content: "\68";
+}
+.icon-angle-down:before {
+  content: "\69";
+}
+.icon-clock:before {
+  content: "\6a";
+}
+.icon-news:before {
+  content: "\6b";
+}
+.icon-user-outline:before {
+  content: "\6c";
+}

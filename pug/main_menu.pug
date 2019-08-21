@@ -1,0 +1,45 @@
+.contenedor
+    nav
+        a(href="/").items.items_primer Inicio
+        a(href="/").items Blog
+        li.submenu 
+            a(href="#").items.items_doble#categoria Categorias 
+                i.icon-angle-down
+            ul.sub_group
+                li 
+                    a.sub_items(href="/") Ultima hora
+                li 
+                    a.sub_items(href="/") Politica
+                li 
+                    a.sub_items(href="/") Nacionales
+                li 
+                    a.sub_items(href="/") Internacionales
+                li 
+                    a.sub_items(href="/") Deportes
+                li 
+                    a.sub_items(href="/") Vida y salud
+                li 
+                    a.sub_items(href="/") Tecnologia
+                li 
+                    a.sub_items(href="/") Animales
+                li 
+                    a.sub_items(href="/") Moda
+                li 
+                    a(href="/").last_sub_menu Viajes
+        a(href="/").items Nosotros
+        a(href="/").items Contacto
+    .bottom_menu
+        form(action="")
+            input(type="text" placeholder="Buscar")
+            button
+                i.icon-search
+        a.email(href="mailto:contacto@elpais.es") 
+            i.icon-mail
+            | contacto@elpais.es
+        .redes
+            a(href="/")
+                i.icon-facebook
+            a(href="/")
+                i.icon-twitter
+            a(href="/")
+                i.icon-google

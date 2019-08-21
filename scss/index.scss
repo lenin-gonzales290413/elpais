@@ -1,0 +1,562 @@
+@import "_lg-grid";
+
+.logo {
+    margin-top: 15px;
+
+    .medio {
+        @include grid;
+    }
+}
+
+
+.portada {
+    margin-top: 15px;
+
+    .medio {
+        display: grid;
+        padding: 0;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 250px);
+    }
+}
+
+.portada_items {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:first-child {
+        grid-column: span 5;
+        grid-row: span 2;
+    }
+
+    &:nth-child(2) {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+
+    &:nth-child(3) {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+
+    .category {
+        background: $color-secundario;
+        color: white;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-family: $fuente2;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .title {
+        position: absolute;
+        color: white;
+        font-family: $fuente1;
+        width: 80%;
+        left: 20px;
+        bottom: 20px;        
+        text-shadow: 1px 1px 1px black;  
+
+    }
+
+}
+
+.datos_portada {
+    font-size: 18px;
+    color: white;
+    font-family: $fuente1;
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    left: 20px;
+
+    .title {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 1px black;  
+    }
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+.date_portada {
+    display: flex;
+    font-style: oblique;
+    font-size: 14px;
+
+}
+
+.titulo,.subtitulo{
+    font-family: $fuente1;
+    font-weight: normal;
+    margin: 20px 0;
+    
+}
+
+// HOME
+
+.home{
+    .medio{
+    display: flex;
+        
+    }
+}
+.center{
+ width: 70%;   
+    flex: auto;
+    
+}
+.sidebar{
+    width: 30%;
+    flex: auto;
+}
+
+.noticias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.noticias_items{
+    width: 30%;
+    flex: auto;
+    margin-right: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    cursor: pointer;
+    h2{
+        font-size: 14px;
+        margin-top: 10px;
+        color: $color-primario;
+        font-family: $fuente1;
+        font-weight: normal;
+        line-height: 20px;
+        transition: all .3s;
+        
+    }
+    &:hover{
+        h2{
+            color: $color-secundario;
+            transition: all .3s;
+        }
+    }
+    
+}
+.date_noticias{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    .user,.date{ 
+        display: flex;
+        font-size: 12px;
+        color: #a3a1a1; 
+        @include grid;
+        margin-bottom: 8px;
+        i{ 
+            margin-right: 2px;
+            height: 10px;
+        }
+    }
+    .user{
+            margin-right: 10px; 
+        }
+}
+.noticias_img{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .category{
+        position: absolute;
+        color: white;
+        right: 0;
+        bottom: 0;
+        font-size: 12px;
+        font-family: $fuente1;
+        padding: 8px;
+        font-weight: normal;
+        background: $color-primario;
+    }
+}
+.ver_mas{
+    border: 1px solid $color-primario;
+    color: $color-primario;
+    font-family: $fuente1;
+    padding: 10px 15px; 
+    display: block; 
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius:20px;
+    transition: all .3s;
+    
+    &:hover{
+        background: $color-primario;
+        color: white;
+        transition: all .3s;
+    }
+}
+.politica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.politica_items{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;   
+    transition: all .3s;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        h2{
+            color: $color-secundario;
+            transition: all .3s;
+        
+        }
+    }
+}
+
+.politica_texto{
+    margin-left: 10px;
+    h2{
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+    }
+}
+
+.nacionales,.deportes{
+    @include grid;
+    flex-wrap: wrap;
+    
+}
+
+.nacionales_items{
+    width: 45%;
+    flex: auto;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 10px;
+    cursor: pointer;
+    h2{
+        font-size: 14px;
+        font-weight: normal;
+        transition: all .3s;
+        
+    }
+    img{
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+    
+    &:hover{
+        h2{
+            color: $color-secundario;
+            transition: all .3s;
+        }
+    }
+}
+
+
+
+.internacional{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.internacional_items{
+    margin-right: 10px;
+    width: 45%;
+    flex: auto;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    img{
+        width: 100%;
+    }
+     h2{
+        font-size: 16px;
+        font-weight: normal;
+        transition: all .3s;
+        
+    }
+    &:hover{
+        h2{
+            color: $color-secundario;
+            transition: all .3s;
+        }
+    }
+}
+
+.internacional_group{
+    width: 50%;
+    flex: auto;
+}
+.internacional_items2{
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+    &:hover{
+        h2{
+            color: $color-secundario;
+            transition: all .3s;
+        }
+    }
+}
+.internacional_texto{
+    margin-left: 10px;
+       h2{
+        font-size: 14px;
+        font-weight: normal;
+        transition: all .3s;
+        
+    }
+}
+.deportes_items{
+    cursor: pointer;
+    &:hover{
+        h2{
+             color: $color-secundario;
+            transition: all .3s;
+        }
+    }
+}
+
+.deportes_items,.reciente_items{
+    width: 45%;
+    flex: auto;
+    margin-right: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.internacional_texto{
+     h2{
+        font-size: 14px;
+        font-weight: normal;
+        transition: all .3s;
+        font-family: $fuente1;
+    } 
+}
+
+
+
+
+// SIDEBAR
+.sidebar{
+    padding-left: 10px;
+}
+
+.titulo_sidebar{
+    font-family: $fuente1;
+    font-weight: normal;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.plomo{
+    width: 100%;
+    height: 200px;
+    background: #ddd;
+}
+
+.post_items{
+    width: 100%;
+    margin-bottom: 10px;
+    cursor:pointer;
+    img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    h2{
+         font-size: 14px;
+        font-weight: normal;
+        transition: all .3s;
+        font-family: $fuente1;
+    }
+     &:hover{
+        h2{
+            color: $color-secundario;
+            transition: all .3s;
+        }
+    }
+}
+img{
+    object-fit: cover; 
+}
+
+.reciente_items{
+    width: 100%;
+    cursor:pointer;
+    img{
+        width: 40%;
+        object-fit: cover;
+    }
+    .internacional_texto{
+        width: 60%;
+    }
+     &:hover{
+        h2{
+            color: $color-secundario;
+            transition: all .3s;
+        }
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .portada{
+        .medio{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .portada_items{
+        height: 250px;
+    }
+    
+    .home{
+        .medio{
+            flex-wrap: wrap;
+            .center{
+                width: 100%;
+            }
+        }
+    }
+    .noticias_items{
+        width: 48%;
+    }
+    .noticias_items_last{
+        width: 100%;
+    }
+    .internacional{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .ver_mas{
+            text-align: center;
+            display: block;
+        }
+    }
+    .internacional_items,.internacional_group{
+        width: 100%;
+    }
+    .internacional_items2{
+        margin-top: 20px;
+    }
+    
+    .deportes_items{
+        width: 100%;
+    }
+    
+    .sidebar{
+        margin-top: 40px;
+    }
+    
+    
+    
+    
+}
+
+
+@media screen and (max-width:500px){
+    .politica_items{
+        img{
+            width: 50%;
+        }
+        h2{
+            font-size: 12px;
+        }
+    }
+    .politica_texto{
+        width: 50%;
+    }
+    .portada{
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+@import "_lg-grid";
+footer{
+    background: $color-primario; 
+    margin-top: 50px;
+    .medio{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+    }
+}
+
+.footer_items{
+    width: 25%;
+    color: white;
+}
+
+.footer_uno{
+    p{
+        margin-top: 10px;
+        font-family: $fuente1;
+        font-size: 12px;
+        width: 80%;
+        line-height: 20px;
+    }
+}
+.footer_dos,.footer_tres,.footer_cuatro{
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    span{
+        display: block;
+        margin-left: -20px;
+        margin-top:5px; 
+        a{
+            font-family: $fuente1;
+            color:white;
+            margin-bottom: 10px;
+            font-size: 14px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.volteado{
+    transform: rotate(270deg); 
+    display: block;
+    margin-top:40px;
+    font-family: $fuente1;
+    color:white;
+    
+}
+.footer_cuatro{
+    .volteado{
+        margin-top: 50px;
+    }
+    span{
+        margin-left: -40px;
+    }
+}
+
+
+.ultimo{
+    background: white;
+    padding: 2px 0;
+    
+    .medio{
+        display: flex;
+        justify-content: space-between;
+        p{
+            display: flex;
+                font-family: $fuente1;
+                color: $color-primario;
+            font-size: 12px;
+            a{
+                font-family: $fuente1;
+                margin-left: 5px;
+                color: $color-primario;
+            }
+        }
+        i{
+            font-size: 16px;
+            transform: rotate(180deg); 
+            cursor: pointer;
+        }
+    }
+}
+.redes_items{
+ display: flex;
+    a{
+        margin-right: 20px;
+        color: $color-primario;
+        
+    }
+}
+
+@media screen and (max-width:769px){
+    footer{
+        .medio{
+            flex-direction: column;
+        }
+    }
+    .footer_items{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer_dos,.footer_tres,.footer_cuatro{
+        justify-content: flex-start;
+        
+    }
+    .volteado{
+        margin-left: -30px;
+    }
+    .ultimo{
+        .medio{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    footer{
+        .icon-angle-down{
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+    }
+}
+
+@media screen and (max-width:500px){
+.ultimo{
+        .medio{
+           
+            p{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
